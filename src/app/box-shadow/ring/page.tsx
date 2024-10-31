@@ -26,6 +26,11 @@ export default function BoxShadowPageRing() {
       </div>
 
       <div className="flex items-center gap-4">
+        multiple border
+        <div className="rainbow-border">🌈</div>
+      </div>
+
+      <div className="flex items-center gap-4">
         nested rings
         <div className="border-demo border-separate rounded-[16px] border-4 border-blue-8 bg-blue-11 text-white">
           <div className="rounded-[12px] border-4 border-white p-[24px]">

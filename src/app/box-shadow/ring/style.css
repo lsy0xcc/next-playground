@@ -5,3 +5,14 @@
 .radius-demo {
   @apply flex size-24 items-center justify-center rounded-3xl text-3xl;
 }
+
+.rainbow-border {
+  @apply flex size-32 items-center justify-center rounded-[32px] text-3xl;
+  box-shadow:
+    inset 0 0 0 4px var(--red-9),
+    inset 0 0 0 8px var(--orange-9),
+    inset 0 0 0 12px var(--yellow-9),
+    inset 0 0 0 16px var(--green-9),
+    inset 0 0 0 20px var(--blue-9),
+    inset 0 0 0 24px var(--purple-9);
+}
