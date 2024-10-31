@@ -21,14 +21,14 @@ export default function BoxShadowPage() {
     isInset ? 'inset' : ''
   } ${offsetX}px ${offsetY}px ${blurRadius}px ${spreadRadius}px var(--blue-5)`;
   return (
-    <div className="flex flex-col gap-8 p-16 items-center">
+    <div className="flex flex-col items-center gap-8 p-16">
       <div
-        className="h-48 w-96 rounded-2xl border flex justify-center items-center"
+        className="flex h-48 w-96 items-center justify-center rounded-2xl border"
         style={{ boxShadow }}
       >
         box shadow
       </div>
-      <div className="w-full grid grid-cols-[auto,48px,1fr] gap-4 items-center justify-start">
+      <div className="grid w-full grid-cols-[auto,48px,1fr] items-center justify-start gap-4">
         <Button onClick={reset}>reset</Button>
         <span></span>
         <span>box-shadow:{boxShadow}</span>

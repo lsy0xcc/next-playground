@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@radix-ui/react-icons':
+        specifier: ^1.3.1
+        version: 1.3.1(react@19.0.0-rc-02c0e824-20241028)
       '@radix-ui/themes':
         specifier: ^3.1.4
         version: 3.1.4(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
@@ -31,14 +34,23 @@ importers:
         specifier: ^18
         version: 18.3.1
       eslint:
-        specifier: ^8
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-config-next:
         specifier: 15.0.2
         version: 15.0.2(eslint@8.57.1)(typescript@5.6.3)
+      eslint-plugin-tailwindcss:
+        specifier: ^3.17.5
+        version: 3.17.5(tailwindcss@3.4.14)
       postcss:
         specifier: ^8
         version: 8.4.47
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      prettier-plugin-tailwindcss:
+        specifier: ^0.6.8
+        version: 0.6.8(prettier@3.3.3)
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.14
@@ -531,6 +543,11 @@ packages:
         optional: true
       '@types/react-dom':
         optional: true
+
+  '@radix-ui/react-icons@1.3.1':
+    resolution: {integrity: sha512-QvYompk0X+8Yjlo/Fv4McrzxohDdM5GgLHyQcPpcsPvlOSXCGFjdbuyGL5dzRbg0GpknAjQJJZzdiRK7iWVuFQ==}
+    peerDependencies:
+      react: ^16.x || ^17.x || ^18.x || ^19.x
 
   '@radix-ui/react-id@1.1.0':
     resolution: {integrity: sha512-EJUrI8yYh7WOjNOqpoJaf1jlFIH2LvtgAl+YcFqNCa+4hj64ZXmPkAKOFs/ukjz3byN6bdb/AVUqHkI8/uWWMA==}
@@ -1342,6 +1359,12 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7
 
+  eslint-plugin-tailwindcss@3.17.5:
+    resolution: {integrity: sha512-8Mi7p7dm+mO1dHgRHHFdPu4RDTBk69Cn4P0B40vRQR+MrguUpwmKwhZy1kqYe3Km8/4nb+cyrCF+5SodOEmaow==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      tailwindcss: ^3.4.0
+
   eslint-scope@7.2.2:
     resolution: {integrity: sha512-dOt21O7lTMhDM+X9mB4GX+DZrZtCUJPL/wlcTqxyrx5IvO0IYtILdtrQGQp+8n5S0gwSVmOf9NQrjMOgfQZlIg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -1940,6 +1963,66 @@ packages:
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+
+  prettier-plugin-tailwindcss@0.6.8:
+    resolution: {integrity: sha512-dGu3kdm7SXPkiW4nzeWKCl3uoImdd5CTZEJGxyypEPL37Wj0HT2pLqjrvSei1nTeuQfO4PUfjeW5cTUNRLZ4sA==}
+    engines: {node: '>=14.21.3'}
+    peerDependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
+      '@prettier/plugin-pug': '*'
+      '@shopify/prettier-plugin-liquid': '*'
+      '@trivago/prettier-plugin-sort-imports': '*'
+      '@zackad/prettier-plugin-twig-melody': '*'
+      prettier: ^3.0
+      prettier-plugin-astro: '*'
+      prettier-plugin-css-order: '*'
+      prettier-plugin-import-sort: '*'
+      prettier-plugin-jsdoc: '*'
+      prettier-plugin-marko: '*'
+      prettier-plugin-multiline-arrays: '*'
+      prettier-plugin-organize-attributes: '*'
+      prettier-plugin-organize-imports: '*'
+      prettier-plugin-sort-imports: '*'
+      prettier-plugin-style-order: '*'
+      prettier-plugin-svelte: '*'
+    peerDependenciesMeta:
+      '@ianvs/prettier-plugin-sort-imports':
+        optional: true
+      '@prettier/plugin-pug':
+        optional: true
+      '@shopify/prettier-plugin-liquid':
+        optional: true
+      '@trivago/prettier-plugin-sort-imports':
+        optional: true
+      '@zackad/prettier-plugin-twig-melody':
+        optional: true
+      prettier-plugin-astro:
+        optional: true
+      prettier-plugin-css-order:
+        optional: true
+      prettier-plugin-import-sort:
+        optional: true
+      prettier-plugin-jsdoc:
+        optional: true
+      prettier-plugin-marko:
+        optional: true
+      prettier-plugin-multiline-arrays:
+        optional: true
+      prettier-plugin-organize-attributes:
+        optional: true
+      prettier-plugin-organize-imports:
+        optional: true
+      prettier-plugin-sort-imports:
+        optional: true
+      prettier-plugin-style-order:
+        optional: true
+      prettier-plugin-svelte:
+        optional: true
+
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -2739,6 +2822,10 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.12
       '@types/react-dom': 18.3.1
+
+  '@radix-ui/react-icons@1.3.1(react@19.0.0-rc-02c0e824-20241028)':
+    dependencies:
+      react: 19.0.0-rc-02c0e824-20241028
 
   '@radix-ui/react-id@1.1.0(@types/react@18.3.12)(react@19.0.0-rc-02c0e824-20241028)':
     dependencies:
@@ -3777,6 +3864,12 @@ snapshots:
       string.prototype.matchall: 4.0.11
       string.prototype.repeat: 1.0.0
 
+  eslint-plugin-tailwindcss@3.17.5(tailwindcss@3.4.14):
+    dependencies:
+      fast-glob: 3.3.2
+      postcss: 8.4.47
+      tailwindcss: 3.4.14
+
   eslint-scope@7.2.2:
     dependencies:
       esrecurse: 4.3.0
@@ -4399,6 +4492,12 @@ snapshots:
       source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
+
+  prettier-plugin-tailwindcss@0.6.8(prettier@3.3.3):
+    dependencies:
+      prettier: 3.3.3
+
+  prettier@3.3.3: {}
 
   prop-types@15.8.1:
     dependencies:
