@@ -23,7 +23,7 @@ export default function BoxShadowPage() {
   return (
     <div className="flex flex-col items-center gap-8 p-16">
       <div
-        className="flex h-48 w-96 items-center justify-center rounded-2xl border"
+        className="flex h-48 w-96 items-center justify-center rounded-[32px] border"
         style={{ boxShadow }}
       >
         box shadow
@@ -35,7 +35,9 @@ export default function BoxShadowPage() {
 
         <span>inset</span>
         <span></span>
-        <Checkbox checked={isInset} onCheckedChange={setIsInset} />
+        <div>
+          <Checkbox checked={isInset} onCheckedChange={setIsInset} />
+        </div>
 
         <span>offset-x</span>
         <span>{offsetX}</span>

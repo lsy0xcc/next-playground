@@ -27,12 +27,12 @@ export default function BoxShadowPageRing() {
 
       <div className="flex items-center gap-4">
         nested rings
-        <div className="border-demo border-separate rounded-lg border border-blue-8 bg-blue-11 text-white">
-          <div className="rounded-[7px] border border-white p-[14px]">
+        <div className="border-demo border-separate rounded-[16px] border-4 border-blue-8 bg-blue-11 text-white">
+          <div className="rounded-[12px] border-4 border-white p-[24px]">
             2 nested element 🤔️
           </div>
         </div>
-        <div className="border-demo rounded-lg bg-blue-11 p-4 text-white ring-1 ring-inset ring-white ring-offset-1 ring-offset-blue-8">
+        <div className="border-demo rounded-[16px] bg-blue-11 p-[32px] text-white ring-4 ring-inset ring-white ring-offset-4 ring-offset-blue-8">
           ring and ring-offset (2 box shadows in 1 element) 🤓️
         </div>
       </div>
