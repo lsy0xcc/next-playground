@@ -13,12 +13,12 @@ export default function BoxShadowPageRing() {
 
       <div className="flex items-center gap-4">
         border radius
-        <div className="radius-demo bg-blue-8 text-white">
+        <div className="radius-demo size-24 rounded-3xl bg-blue-8 text-white">
           <div className="flex size-20 items-center justify-center rounded-3xl bg-blue-11">
             🤔️
           </div>
         </div>
-        <div className="radius-demo bg-blue-8 text-white">
+        <div className="radius-demo size-24 rounded-3xl bg-blue-8 text-white">
           <div className="flex size-20 items-center justify-center rounded-2xl bg-blue-11">
             🤓️
           </div>
