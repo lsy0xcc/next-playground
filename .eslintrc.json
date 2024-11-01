@@ -1,4 +1,7 @@
 {
+  "rules": {
+    "tailwindcss/enforces-shorthand": ["off"]
+  },
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
